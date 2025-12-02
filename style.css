@@ -1,0 +1,355 @@
+/* =========================
+   Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   Header / Navbar
+========================= */
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0033cc;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0033cc;
+}
+
+/* Dark mode toggle inside navbar */
+.dark-mode-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.dark-mode-label input {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    height: 70vh;
+    background-color: #eef4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #0033cc;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    background-color: #0033cc;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #001a66;
+    cursor: pointer;
+}
+
+/* =========================
+   Features Section
+========================= */
+.features {
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card h3 {
+    color: #0033cc;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #444;
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Task Form Section
+========================= */
+.task-form-section {
+    padding: 50px 40px;
+    background-color: #f7f9ff;
+}
+
+.task-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0033cc;
+    font-size: 32px;
+}
+
+.task-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.task-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.task-form textarea {
+    height: 110px;
+    resize: none;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #001a66;
+}
+
+/* =========================
+   Task Dashboard
+========================= */
+.task-dashboard {
+    padding: 50px 40px;
+}
+
+.task-dashboard h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #0033cc;
+    margin-bottom: 40px;
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.task-card {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+}
+
+.task-card h3 {
+    color: #0033cc;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Priority badges */
+.badge {
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+.badge.high { background-color: #d9534f; }   /* Red */
+.badge.medium { background-color: #f0ad4e; } /* Orange */
+.badge.low { background-color: #5cb85c; }    /* Green */
+
+.deadline {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Delete button */
+.delete-btn {
+    padding: 8px 15px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #990000;
+}
+
+/* =========================
+   Auth Section (Login/Signup)
+========================= */
+.auth-section {
+    padding: 50px 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f9ff;
+}
+
+.auth-container {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #0033cc;
+    margin-bottom: 20px;
+}
+
+.auth-container label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-container button:hover {
+    background-color: #001a66;
+}
+
+/* =========================
+   Dark Mode Styles
+========================= */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .hero,
+body.dark-mode .features,
+body.dark-mode .task-form-section,
+body.dark-mode .task-dashboard,
+body.dark-mode .auth-section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .task-card,
+body.dark-mode .auth-container {
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #333;
+    color: #f1f1f1;
+    border: 1px solid #555;
+}
+
+body.dark-mode nav a {
+    color: #f1f1f1;
+}
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskSense UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2 class="logo">TaskSense</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tasks</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+        <!-- Dark Mode Toggle -->
+        <label class="dark-mode-label">
+            🌙
+            <input type="checkbox" id="darkModeToggle">
+        </label>
+    </nav>
+
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Smart Task Manager</h1>
+        <p>Prioritize your tasks by importance and urgency.</p>
+        <button class="hero-btn">Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="card">
+            <h3>Auto Priority Sorting</h3>
+            <p>Tasks arranged by importance + deadlines.</p>
+        </div>
+
+        <div class="card">
+            <h3>Reminder Alerts</h3>
+            <p>Never miss important tasks again.</p>
+        </div>
+
+        <div class="card">
+            <h3>Deadline Tracker</h3>
+            <p>See tasks based on urgency instantly.</p>
+        </div>
+    </section>
+    <!-- Task Form Section -->
+<section class="task-form-section">
+    <h2>Add a New Task</h2>
+
+    <form class="task-form">
+        
+        <label>Task Title</label>
+        <input type="text" placeholder="Enter task name" required>
+
+        <label>Description</label>
+        <textarea placeholder="Enter task details"></textarea>
+
+        <label>Deadline</label>
+        <input type="date" required>
+
+        <label>Priority</label>
+        <select>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Add Task</button>
+    </form>
+</section>
+<!-- Task Dashboard -->
+<section class="task-dashboard">
+    <h2>Your Tasks</h2>
+    <div class="task-container" id="taskContainer">
+        <!-- Task cards will appear here dynamically -->
+    </div>
+</section>
+<!-- Login/Signup Section -->
+<section class="auth-section">
+    <div class="auth-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <label>Name</label>
+            <input type="text" placeholder="Enter name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Link JS file at the bottom -->
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
