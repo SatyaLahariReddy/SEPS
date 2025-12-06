@@ -1,0 +1,44 @@
+body{margin:0;font-family:Arial,sans-serif;transition:0.3s; background:#f5f5f5;color:#333;}
+.dark-mode{background:#121212;color:#f5f5f5;}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);transition:0.3s;}
+.dark-mode header{background:#1f1f1f;}
+header .logo{font-weight:bold;font-size:24px;}
+header nav a{margin:0 15px;text-decoration:none;color:#333;font-weight:500;transition:0.3s;}
+header nav a:hover{color:#3498db;}
+header nav a.active{color:#3498db;font-weight:bold;}
+header nav label{cursor:pointer;}
+.hero{padding:80px 20px;text-align:center;background:#3498db;color:#fff;transition:0.3s;}
+.hero h1{font-size:42px;margin-bottom:20px;transition:0.3s;}
+.hero p{font-size:18px;margin-bottom:30px;transition:0.3s;}
+.hero-buttons a{padding:12px 25px;border-radius:5px;text-decoration:none;margin-right:15px;transition:0.3s;}
+.btn-primary{background:#fff;color:#3498db;}
+.btn-primary:hover{background:#2980b9;color:#fff;}
+.btn-secondary{border:2px solid #fff;color:#fff;}
+.btn-secondary:hover{background:#fff;color:#3498db;}
+.features, .steps, .task-form-section, .task-dashboard{padding:50px 20px;text-align:center;}
+.feature-cards, .step-cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.feature-card, .step-card{background:#fff;padding:25px;border-radius:10px;width:250px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.feature-card:hover, .step-card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+.dark-mode .feature-card, .dark-mode .step-card{background:#1f1f1f;color:#f5f5f5;}
+.auth-section{display:flex;justify-content:center;align-items:center;padding:50px 20px;}
+.auth-container{background:#fff;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);width:320px;transition:0.3s;}
+.dark-mode .auth-container{background:#1f1f1f;color:#f5f5f5;}
+.auth-container input, .auth-container select, .auth-container textarea, .auth-container button{width:100%;margin:10px 0;padding:10px;border-radius:5px;border:1px solid #ccc;transition:0.3s;}
+.auth-container input:focus, .auth-container textarea:focus, .auth-container select:focus{border-color:#3498db;outline:none;}
+.task-card{border:1px solid #ccc;padding:15px;margin:15px 0;border-radius:8px;position:relative;transition:0.3s;}
+.task-card:hover{transform:scale(1.02);box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+.task-card .delete-btn{position:absolute;top:10px;right:10px;background:red;color:#fff;border:none;padding:5px 8px;border-radius:3px;cursor:pointer;transition:0.3s;}
+.task-card .delete-btn:hover{background:#c0392b;}
+.badge{padding:5px 8px;border-radius:4px;color:#fff;font-size:12px;}
+.high{background:#e74c3c;}
+.medium{background:#f39c12;}
+.low{background:#27ae60;}
+.password-field{position:relative;}
+.password-field .eye{position:absolute;right:10px;top:50%;transform:translateY(-50%);cursor:pointer;}
+.logout-btn{padding:6px 12px;background:red;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:0.3s;}
+.logout-btn:hover{background:#c0392b;}
+.message{color:red;margin-top:10px;}
+footer{text-align:center;padding:20px;background:#f5f5f5;transition:0.3s;}
+.dark-mode footer{background:#1f1f1f;color:#f5f5f5;}
+footer a{color:#3498db;text-decoration:none;margin:0 5px;}
+footer a:hover{text-decoration:underline;}
